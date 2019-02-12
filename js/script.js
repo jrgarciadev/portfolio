@@ -34,32 +34,21 @@ $(document).ready(function () {
     scale: 0.3,
     distance: '0px'
   }, 300);
+
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {       
+        $('#return-to-top').fadeIn(200);    
+    } else {
+        $('#return-to-top').fadeOut(200);  
+    }
+});
+$('#return-to-top').click(function() {      
+    $('body,html').animate({
+        scrollTop : 0                       
+    }, 500);
 });
 
-(function($) {
-  "use strict"; // Start of use strict
- //#to-top button appears after scrolling
- var fixed = false;
- $(document).scroll(function() {
-   if ($(this).scrollTop() > 250) {
-     if (!fixed) {
-       fixed = true;
-       $('#toTop').show("slow", function() {
-         $('#toTop').css({
-           position: 'fixed',
-           display: 'block'
-         });
-       });
-     }
-   } else {
-     if (fixed) {
-       fixed = false;
-       $('#toTop').hide("slow", function() {
-         $('#toTop').css({
-           display: 'none'
-         });
-       });
-     }
-   }
- });
-})(jQuery); // End of use strict
+});
+
+
