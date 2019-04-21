@@ -101,8 +101,25 @@ body a{
   bottom: 20px; 
 }
 .img-tech {
-  max-width: 180px;
+  max-width: 120px;
 }
+.laravel-img {
+  max-width: 215px; 
+}
+.firebase-img {
+  margin-left: 35px;
+  max-width: 215px;
+}
+.wordpress-img {
+  margin-left: 60px;
+  margin-top: 5px;
+  max-width: 60px;
+}
+.pre-css-img {
+  margin-top: 20px;
+  max-width: 300px;
+}
+
 
 
 /********************************************
@@ -242,15 +259,13 @@ hr{
   color: #555;
   font-size: 1.2em;
   line-height: 1.5em;
-  width: 80%;
-  margin: 0 auto 3em auto;
   text-align: center;
   font-weight: 400;
 }
 
 .content_middle{
+  padding-top: 8em;
 	background:#f6f6f6;
-	padding:8em 0;
 }
 
 a.play-icon{
