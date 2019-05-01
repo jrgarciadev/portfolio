@@ -26,4 +26,15 @@ $(document).ready(function () {
     e.preventDefault();
     $("html, body").animate({scrollTop: 0}, 1000);
   });
+
+  /* -------------------------------------------------------------
+  Swiper
+  ------------------------------------------------------------- */
+  var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
 });
