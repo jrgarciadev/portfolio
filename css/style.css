@@ -327,13 +327,13 @@ hr {
   /* 
   ## 320PX - 480PX
   ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
+  ##Screen = B/w 320px to 480px
   */
   @media (min-width: 320px) and (max-width: 480px) {
     .hero{
       background-image: url(../images/banner_mobile.jpg);
       height: 100vh;
-      width: 100vw;
+      width: 100%;
     }
 
     .hero .container {
