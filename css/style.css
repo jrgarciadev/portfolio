@@ -341,17 +341,17 @@ hr {
     }
 
     .hero h1 {
-      font-size: 16px;
+      font-size: 22px;
       font-weight: 600;
     }
 
     .hero h2 {
-      font-size: 12px;
+      font-size: 16px;
       font-weight: 600;
     }
 
     .hero p {
-      font-size: 11px;
+      font-size: 12px;
     }
   }
 
