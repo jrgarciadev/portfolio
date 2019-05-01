@@ -6,7 +6,7 @@ $(document).ready(function () {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
       event.preventDefault();
-      $('html, body').stop().animate({
+      $('html, body').animate({
         scrollTop: target.offset().top
       }, 1000);
     }
