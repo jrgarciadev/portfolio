@@ -304,12 +304,17 @@ hr{
 /***********************************
  *  Works
  ***********************************/
+ .work-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+ }
 .work-wrapper img {
   width: 80%;
 }
 
 .work-description {
-  text-align: justify;
+  text-align: center;
 }
 .swiper-pagination-bullet {
     opacity: 0.5;
