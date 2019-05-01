@@ -19,7 +19,8 @@ body a {
 	-ms-transition:0.5s all;
 }
 
-hr{
+hr {
+  background-color: #2d9c89;
   color: #2d9c89;
   display: block;
   margin-top:0em;
@@ -50,7 +51,7 @@ hr{
 .hero h1{
 	color: #1a2733;
   text-transform: uppercase;
-  font-size: 4em;
+  font-size: calc(24px + 2vw);
   font-weight: 400;
   letter-spacing: 10px;
   margin-bottom:20px;
@@ -59,7 +60,7 @@ hr{
 .hero h2{
 	color: #1a2733;
   text-transform: uppercase;
-  font-size:2em;
+  font-size: calc(22px + 1vw);
   font-weight: 400;
   letter-spacing: 10px;
 }
@@ -67,10 +68,10 @@ hr{
 .hero p{
   color: #1a2733;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: calc(12px + 0.5vw);
   font-weight: 400;
   line-height: 1.8em;
-  margin: 3em auto 0;
+  margin: 0 auto;
   width: 80%;
 }
 
@@ -79,6 +80,24 @@ hr{
   justify-content: center;
   padding-top: 20px;
 }
+
+.title{
+  display: block;
+  color: #3c3c3c;
+  font-size: 35px;
+  font-weight:800;
+  line-height: 24px;
+  margin: 0;
+  padding: 24px 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/*About*/
+
+
 
 /********************************************
 * ARROW-HEADER                              *
@@ -159,29 +178,10 @@ hr{
   }
 }
 
-/***********FIN FLECHA *****/
-
-/********************************
-*           ABOUT ME            *
-*********************************/
 .content-light{
   padding:8em 0;
   text-align:center;
 } 
-
-.tz-title-3{
-  display: block;
-  color: #3c3c3c;
-  font-size: 35px;
-  font-weight:800;
-  line-height: 24px;
-  margin: 0;
-  padding: 24px 0;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
 
 .content-light img{
 	display:inline-block;
@@ -206,7 +206,7 @@ hr{
 
 .content-dark {
   padding: 8em 0;
-	background:#f6f6f6;
+  background:#f6f6f6;
 }
 
 .content-dark_bottom h4 {
@@ -222,28 +222,67 @@ hr{
 .content-dark_bottom{
   padding:8em 0 0 0;
 }
+/***********************************
+ *  Works
+ ***********************************/
+ .work-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.work-wrapper img {
+  width: 80%;
+}
+
+.work-description {
+  text-align: center;
+}
+.swiper-pagination-bullet {
+  opacity: 0.5;
+  background-color: #2d9c89;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
 
 .swiper-container {
-    width: 100%;
-    height: 400px;
+  width: 100%;
+  height: 400px;
 }
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
+/***********************************
+ *  Footer
+ ***********************************/
+ .copy{
+  background:#c9c9ca;
+  padding:2em 0;
+  text-align:center;
+}
+
+.copy p{
+  font-size: 1em;
+  color: #555;
+  font-weight: 500;
+}
+
 
 .lc-to-top {
   position: fixed;
@@ -280,57 +319,64 @@ hr{
   bottom: 20px; 
 }
 
-/***********************************
- *  Works
- ***********************************/
- .work-wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
- }
-.work-wrapper img {
-  width: 80%;
-}
-
-.work-description {
-  text-align: center;
-}
-.swiper-pagination-bullet {
-    opacity: 0.5;
-    background-color: #2d9c89;
-}
-
-.swiper-pagination-bullet-active {
-    opacity: 1;
-}
-
-/***********************************
- *  Footer
- ***********************************/
-.copy{
-  background:#c9c9ca;
-  padding:2em 0;
-  text-align:center;
-}
-
-.copy p{
-  font-size: 1em;
-  color: #555;
-  font-weight: 500;
-}
-
 
 /******************************************
- *  RESPONSIVE DESIGN  (Desktop First)    *
+ *  RESPONSIVE DESIGN  (Mobile First)    *
  ******************************************/
 
+  /* 
+  ## 320PX - 480PX
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+  */
+  @media (min-width: 320px) and (max-width: 480px) {
+    .hero{
+      background-image: url(../images/banner_mobile.jpg);
+      height: 480px;
+    }
+
+    .hero .container {
+      padding-top: calc(80px + 3vw);
+    }
+
+    .hero h1 {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .hero h2 {
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 11px;
+    }
+  }
+
 /* 
-  ## 1281PX and More
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
+  ## 481 - 767PX
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+  */
+  @media (min-width: 481px) and (max-width: 767px) {
+  }
+
+  /* 
+  ## 768PX - 1024PX
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+  */
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  }
+
+  /* 
+  ## 768PX - 1024PX
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
   */
 
-  @media (min-width: 1281px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
   }
 
   /* 
@@ -343,39 +389,24 @@ hr{
   }
 
 
-  /* 
-  ## 768PX - 1024PX
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
+
+/* 
+  ## 1281PX and More
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
   */
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 1281px) {
   }
 
 
-  /* 
-  ## 768PX - 1024PX
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-  */
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  }
 
-  /* 
-  ## 481 - 767PX
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-  */
-  @media (min-width: 481px) and (max-width: 767px) {
-  }
 
-  /* 
-  ## 320PX - 480PX
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-  */
-  @media (min-width: 320px) and (max-width: 480px) {
-  }
+
+
+
+
+
 
 
 
