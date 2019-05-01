@@ -332,7 +332,7 @@ hr {
   @media (min-width: 320px) and (max-width: 480px) {
     .hero{
       background-image: url(../images/banner_mobile.jpg);
-      height: 480px;
+      height: 100vh;
     }
 
     .hero .container {
