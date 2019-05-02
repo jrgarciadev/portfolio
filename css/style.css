@@ -392,19 +392,19 @@ hr {
     }
 
     .hero h1 {
-      font-size: calc(22px + 1vw);
+      font-size: calc(22px + 0.2vw);
       font-weight: 600;
       letter-spacing: 6px;
     }
 
     .hero h2 {
-      font-size: calc(16px + 1vw);
+      font-size: calc(16px + 0.2vw);
       font-weight: 600;
       letter-spacing: 4px;
     }
 
     .hero p {
-      font-size: calc(12px + 1vw);
+      font-size: calc(12px + 0.2vw);
     }
   }
 
