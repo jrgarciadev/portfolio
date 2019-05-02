@@ -375,13 +375,13 @@ hr {
 
 .lc-to-top {
   position: fixed;
-  bottom: 20px;
+  bottom: -100%;
   right: 20px;
-  width: 45px;
+  width: 40px;
   font-size: 20px;
-  height: 45px;
+  height: 40px;
   text-align: center;
-  line-height: 44px;
+  line-height: 40px;
   color: #fff;
   background: #2D9C89;
   opacity: 1;
@@ -405,7 +405,7 @@ hr {
   color: #fff; 
 }
 .backtop-top-show {
-  bottom: 20px; 
+  bottom: 10px; 
 }
 
 
