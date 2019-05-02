@@ -30,10 +30,19 @@ $(document).ready(function () {
   /* -------------------------------------------------------------
   Swiper
   ------------------------------------------------------------- */
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('#swiper1', {
     spaceBetween: 30,
     pagination: {
-      el: '.swiper-pagination',
+      el: '#pagination1',
+      clickable: true,
+    },
+  });
+  var swiper = new Swiper('#swiper2', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: '#pagination2',
       clickable: true,
     },
   });
