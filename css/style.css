@@ -375,13 +375,13 @@ hr {
 
 .lc-to-top {
   position: fixed;
-  bottom: -100%;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
   width: 45px;
+  font-size: 20px;
   height: 45px;
   text-align: center;
   line-height: 44px;
-  font-size: 27px;
   color: #fff;
   background: #2D9C89;
   opacity: 1;
