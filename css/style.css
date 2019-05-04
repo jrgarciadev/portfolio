@@ -483,6 +483,9 @@ hr {
     .hero p {
       font-size: calc(12px + 0.2vw);
     }
+    #about .list-inline {
+      margin-right: 0px;
+    }
 
     #swiper3 .testimonials {
       font-size: 1.2em !important;
@@ -499,6 +502,11 @@ hr {
   ##Screen = B/w 768px to 1024px
   */
   @media (min-width: 481px) and (max-width: 767px) {
+
+    #about .list-inline {
+      margin-right: 0px;
+    }
+
     #swiper3 .testimonials {
       font-size: 1.2em !important;
     }
