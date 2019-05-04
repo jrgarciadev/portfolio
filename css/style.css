@@ -301,7 +301,7 @@ hr {
   width: 120px;
   height: 120px;
   padding: 5px;
- }
+}
 /***********************************
  *  Works
  ***********************************/
@@ -483,6 +483,14 @@ hr {
     .hero p {
       font-size: calc(12px + 0.2vw);
     }
+
+    #swiper3 .testimonials {
+      font-size: 1.2em !important;
+    }
+
+    #swiper3 span {
+      font-size: 1em;
+    }
   }
 
 /* 
@@ -491,6 +499,13 @@ hr {
   ##Screen = B/w 768px to 1024px
   */
   @media (min-width: 481px) and (max-width: 767px) {
+    #swiper3 .testimonials {
+      font-size: 1.2em !important;
+    }
+
+    #swiper3 span {
+      font-size: 1em;
+    }
   }
 
   /* 
