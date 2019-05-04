@@ -65,4 +65,11 @@ $(document).ready(function () {
     }
   });
 
+  var swiper = new Swiper('#swiper3', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
 });
