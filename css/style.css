@@ -312,6 +312,19 @@ hr {
 }
 .work-description {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.work-description a {
+  color: #2d9c89;
+}
+.work-description p{
+  margin-top: 1em;
+  margin-bottom: 1em
+}
+.work-img {
+  max-height:400px; 
 }
 .swiper-pagination-bullet {
   opacity: 0.5;
