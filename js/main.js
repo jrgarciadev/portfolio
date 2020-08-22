@@ -6,7 +6,7 @@ $(document).ready(function () {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
       event.preventDefault();
-      $('html, body').stop().animate({
+      $('html, body').animate({
         scrollTop: target.offset().top
       }, 1000);
     }
@@ -30,11 +30,46 @@ $(document).ready(function () {
   /* -------------------------------------------------------------
   Swiper
   ------------------------------------------------------------- */
-  var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+  var swiper = new Swiper('#swiper1', {
+    spaceBetween: 30,
+    pagination: {
+      el: '#pagination1',
+      clickable: true,
+    },
+  });
+  var swiper = new Swiper('#swiper2', {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: '#pagination2',
+      clickable: true,
+    },
+    breakpoints: {
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 40,
       },
-    });
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      }
+    }
+  });
+
+  var swiper = new Swiper('#swiper3', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
 });
